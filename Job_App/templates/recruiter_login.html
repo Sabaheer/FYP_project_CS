@@ -5,14 +5,14 @@
 {% include 'Navigation.html' %}
 
 <marquee style="font-family: 'Monotype Corsiva'; font-size: 30px; color: darkcyan; background-color: black; font-weight: bold; margin-top: 1%;">
-    Admin Login
+    Recruiter Login
 
 </marquee>
 
 <form class="container mt-5" method="post" >
     {% csrf_token %}
 
-    <label><b>UserName</b></label>
+    <label><b>Recruiter Name</b></label>
     <input type="text" class="form-control" name="uname" placeholder="Enter UserName">
 
     <label><b>Password</b></label>

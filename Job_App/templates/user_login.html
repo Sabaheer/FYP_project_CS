@@ -5,15 +5,15 @@
 {% include 'Navigation.html' %}
 
 <marquee style="font-family: 'Monotype Corsiva'; font-size: 30px; color: darkcyan; background-color: black; font-weight: bold; margin-top: 1%;">
-    Admin Login
+    User Login
 
 </marquee>
 
 <form class="container mt-5" method="post" >
     {% csrf_token %}
 
-    <label><b>UserName</b></label>
-    <input type="text" class="form-control" name="uname" placeholder="Enter UserName">
+    <label><b>Email Id</b></label>
+    <input type="text" class="form-control" name="uname" placeholder="Enter EmailId">
 
     <label><b>Password</b></label>
     <input type="password" class="form-control" name="pwd" placeholder="Enter Password">
