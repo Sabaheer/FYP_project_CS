@@ -37,13 +37,6 @@
 
     <div class="form-row">
         <div class="form-group col-md-12">
-            <label><b>Contact No</b></label>
-            <input type="text" class="form-control" name="contact" placeholder="Enter Contact No" required>
-        </div>
-    </div>
-
-    <div class="form-row">
-        <div class="form-group col-md-12">
             <label><b>Email Id</b></label>
             <input type="text" class="form-control" name="email" placeholder="Enter Email Id" required>
         </div>
@@ -64,7 +57,11 @@
 
 {% include 'footer.html' %}
 
+<<<<<<< HEAD
 {% if error == "no" %}
+=======
+{% if error == "yes" %}
+>>>>>>> 948e8ead496ee9e8630b81179c70a683aed6e79b
 
 <script>
     alert("SignUp Successfull");
@@ -73,7 +70,11 @@
 
 {% endif %}
 
+<<<<<<< HEAD
 {% if error == "yes" %}
+=======
+{% if error == "no" %}
+>>>>>>> 948e8ead496ee9e8630b81179c70a683aed6e79b
 
 <script>
     alert("Something went wrong, Try Again... ");
