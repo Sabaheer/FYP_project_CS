@@ -65,4 +65,20 @@
 
 {% include 'footer.html' %}
 
+{% ifequal error "no" %}
+
+<script>
+    alert("SignUp Successfull");
+    window.location = ("{% url 'user_login' %}")
+</script>
+
+{% endifequal %}
+
+{% ifequal error "yes" %}
+
+<script>
+    alert("Something went wrong, Try Again... ");
+</script>
+{% endifequal %}
+
 {% endblock %}
