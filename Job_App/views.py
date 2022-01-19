@@ -32,5 +32,6 @@ def user_signup(request):
         except:
             error="yes"
     d = {'error':error}
+    print(d['error'])
     return render(request, 'user_signup.html', d)
     
